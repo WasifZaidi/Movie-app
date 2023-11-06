@@ -1,0 +1,195 @@
+.Details{
+    padding-bottom: 8vw;
+}
+.Details .Details-section{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 5vw 3vw;
+    gap: 2vw;
+    align-items: center;
+    color: white;
+}
+.Details .Details-section .Left{
+width: 40%;
+}
+.Details .Details-section .Left img{
+    width: 100%;
+}
+.Details .Details-section .right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.Details .Details-section .right .details{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.Details .Details-section .right b{
+    font-size: 2vw;
+}
+.Details .Details-section .right p{
+    font-size: 1.2vw;
+}
+.Details .Details-section .right .more-det{
+    display: flex;
+    gap: 2vw;
+}
+.Details .Details-section .right .more-det .det{
+    display: flex;
+    gap: 1vw;
+}
+.Details .Details-section .right .more-det .det p{
+    font-size: 2vw;
+}
+.Details .Details-section .right .watch a{
+    width: max-content;
+    height: max-content;
+    font-size: 1.2vw;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    padding: 1vw 2vw;
+    background-color: maroon;
+}
+.Details .Details-section .right .watch a .icon{
+    font-size: 3vw;
+}
+.Details .Production-companies{
+padding: 0vw 3vw;
+}
+.Details .Production-companies .heading h1{
+    color: white;
+    font-size: 4vw;
+    
+}
+.Details .Production-companies .Section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 1vw;
+    color: white;
+    padding: 0vw 3vw;
+}
+.Details .Production-companies .card{
+    display: flex;
+    width:100% ;
+   
+}
+.Details .Production-companies .card img{
+    width:100% ;
+}
+.Details .res-heading{
+    display: none;
+}
+@media screen and (max-width:1000px) {
+    .Details{
+        padding-bottom: 13vw;
+    }
+    .Details .Details-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw 3vw;
+        padding-bottom: 7vw;
+        gap: 2vw;
+    }
+    .Details .Details-section .Left{
+    display: none;
+    }
+    .Details .Details-section .right{
+        width: 100%;
+        gap: 2vw;
+    }
+    .Details .Details-section .right h1{
+        font-size: 8vw;
+        display: none;
+    }
+    .Details .Details-section .right .res-heading{
+        display: block;
+    }
+    .Details .Details-section .right b{
+        font-size: 4vw;
+    }
+    .Details .Details-section .right p{
+        font-size: 2.8vw;
+    }
+    .Details .Details-section .right .more-det{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .Details .Details-section .right .more-det .det{
+        gap: 4vw;
+    }
+    .Details .Details-section .right .more-det .det p{
+        font-size: 4vw;
+    }
+    .Details .Details-section .right .watch {
+       margin-top: 4vw;
+    }
+    .Details .Details-section .right .watch a{
+        font-size: 4vw;
+        display: flex;
+        gap: 1vw;
+        align-items: center;
+        padding: 2vw 4vw;
+        background-color: maroon;
+    }
+    .Details .Details-section .right .watch a .icon{
+    font-size: 7vw;
+    }
+    .Details .Production-companies .heading h1{
+        font-size: 7vw;
+        
+    }
+    .Details .Production-companies .Section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:500px) {
+    .Details{
+        padding-bottom: 20vw;
+    }
+    .Details .Details-section{
+        padding: 5vw 5vw;
+        padding-bottom: 12vw;
+    }
+    .Details .Details-section .right .res-heading{
+        display: block;
+        font-size: 8vw;
+    }
+    .Details .Details-section .right b{
+        font-size: 5vw;
+    }
+    .Details .Details-section .right p{
+        font-size: 3.8vw;
+    }
+    .Details .Details-section .right .more-det{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .Details .Details-section .right .more-det .det{
+        gap: 4vw;
+    }
+    .Details .Details-section .right .more-det .det p{
+        font-size: 7vw;
+    }
+    .Details .Details-section .right .watch a{
+        font-size: 6vw;
+        padding: 3vw 4vw;
+    }
+    .Details .Production-companies{
+        padding: 0vw 5vw
+    }
+    .Details .Production-companies .heading h1{
+        font-size: 8vw;
+        
+    }
+    .Details .Production-companies .Section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

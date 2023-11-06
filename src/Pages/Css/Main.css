@@ -1,0 +1,74 @@
+.Page{
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 8vw;
+    height: max-content;
+    color: white;
+}
+.Page .heading{
+    padding: 3vw 3vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Page .heading .input input {
+    width: 30vw;
+    border: 0px;
+    border-radius: 0px;
+    background-color: white;
+    font-size: 1.2vw;
+    padding: 1vw;
+}
+.Page .heading h1{
+    font-size: 5vw;
+    padding-right: 5vw;
+    width: max-content;
+    border-bottom: 1px solid red;
+}
+.Page-section{
+    width: 100%;
+    display: grid;
+    padding: 0vw 3vw;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+}
+@media screen and (max-width:1000px) {
+    .Page{
+        padding-bottom: 13vw;
+    }
+    
+    .Page .heading{
+        padding: 6vw 6vw;
+    }
+    .Page .heading h1{
+        font-size: 9vw;
+        padding-right: 10vw;
+
+    }
+    .Page-section{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+        padding: 0vw 3vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .Page{
+        padding-bottom: 20vw;
+    }
+    
+    .Page .heading{
+        padding: 10vw 6vw;
+    }
+    .Page .heading h1{
+        font-size: 12vw;
+        padding-bottom: 2vw;
+        padding-right: 10vw;
+        border-bottom: 1px solid red;
+    }
+    .Page-section{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8vw;
+        padding: 0vw 6vw;
+    }
+}

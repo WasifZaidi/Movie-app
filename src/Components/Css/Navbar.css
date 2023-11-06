@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&family=Secular+One&display=swap');
+
+.Navbar{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    flex-direction: column;
+    color: white;
+    z-index: 1000;
+    top: 0;
+}
+.Navbar .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    padding: 1vw 2vw;
+}
+
+.Navbar .top .left{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    width: 40%;
+    justify-content: space-between;
+}
+.Navbar .top .left .logo{
+    font-size: 1vw;
+}
+.Navbar .top .left .links{
+    display: flex;
+    gap: 2vw;
+}
+.Navbar .top .left .links a{
+    display: flex;
+    gap: 2vw;
+    font-size: 1.25vw;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+.Navbar .top .right{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+.Navbar .top .right .btn{
+    width: 50%;
+    font-size: 1.1vw;
+    border: 0px;
+    outline: 0px;
+    text-align: center;
+    padding: 0.7vw;
+    background-color: maroon;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 0px;
+    font-weight: 900;
+    color: white;
+}  
+.Navbar .bottom{
+    width: 100%;
+    display: none;
+    height: max-content;
+    /* display: flex; */
+    padding: 2vw 12vw ;
+    background-color: rgba(0,0,0,0.5);
+}
+.Navbar .bottom-section{
+     width: 100%;
+     height: max-content;
+     display: flex;
+     align-items: center;
+} 
+.Navbar .bottom-section .content{
+    display: flex;
+    align-items: center;
+    gap: 6vw;
+    width: 100%;
+}
+.Navbar .bottom-section .content h1{ 
+ font-size: 3vw;
+}
+.Navbar .bottom-section .content .links{
+    display: flex;
+    gap: 2vw;
+}
+.Navbar .bottom-section .content .links a{
+   font-size: 1.7vw;
+   color: white;
+   text-decoration: none;
+}
+.Navbar .top .right .menu{
+    display: none;
+}
+.res-navbar{
+    display: none;
+}
+@media screen and (max-width:1400px) {
+    .Navbar .top{
+        padding: 1.3vw 2vw;
+        gap: 10vw;
+    }
+    .Navbar .top .left{
+        width: 60%;
+    }
+    .Navbar .top .left .logo{
+        font-size: 1.2vw;
+    }
+    .Navbar .top .left .links a{
+        font-size: 1.5vw;
+    }
+    .Navbar .top .right .btn{
+        width: 70%;
+        font-size: 1.7vw;
+        padding: 1vw;
+    }  
+    
+}
+@media screen and (max-width:1000px) {
+    .Navbar .top{
+        padding: 4vw 6vw ;
+    }
+    .Navbar .top .left .logo{
+        font-size: 3.3vw;
+    }
+    .Navbar .top .right .btn{
+      display: none;
+    }
+    .Navbar .top .left .links{
+        display: none;
+    }
+    .Navbar .top .right .menu{
+        display: block;
+        font-size: 6vw;
+    }
+    .Navbar .top .right .mobile{
+        display: none;
+    }
+    .res-navbar{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Josefin Sans', sans-serif;
+        gap: 10vw;
+        height: max-content;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        padding: 10vw 4vw;
+        right: 0;
+        z-index: 1000;
+        width: 0%;
+        visibility: hidden;
+        overflow: hidden;
+        transition: 1s all ease;
+    }
+    .res-navbar .heading{
+        color: white;
+        display: flex;
+        width: 100%;
+        height: max-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .res-navbar .heading h1{
+        font-size: 4vw;
+    }
+    .res-navbar .heading .menu{
+        font-size: 4vw;
+    }
+    .res-navbar .links{
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+    }
+    .res-navbar .links .section{
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+    .res-navbar .links .section h1{
+        color: white;
+        font-size: 4vw;
+        width: 70%;
+        padding-bottom: 2vw;
+        border-bottom: 1px solid maroon;
+    }
+    .res-navbar .links .section .links-section{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        font-size: 4vw;
+    }
+    .res-navbar .links .search{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        height: max-content;
+    }
+    .res-navbar .links .search .btn{
+        width: 100%;
+        font-size: 3.6vw;
+        text-align: center;
+        padding: 3vw;
+        background-color: maroon;
+    }
+}
+@media screen and (max-width:500px) {
+    .Navbar .top{
+        padding: 6vw 6vw ;
+    }
+    .Navbar .top .left .logo{
+        font-size: 4vw;
+    }
+    .Navbar .top .right .menu{
+        font-size: 8vw;
+    }
+
+    .res-navbar{
+        padding: 10vw;
+        gap: 15vw;
+        width: 0%;
+        visibility: hidden;
+        overflow: hidden;;
+    }
+    .res-navbar .heading h1{
+        font-size: 6vw;
+    }
+    .res-navbar .heading .menu{
+        font-size: 7vw;
+    }   
+    .Navbar .top .res-navbar #mobile{
+        display: block;
+    }
+    .Navbar .top .res-navbar #ipad{
+        display: none;
+    }
+    .res-navbar .links{
+        gap: 9vw;
+    }
+    .res-navbar .links .section h1{
+        color: white;
+        font-size: 6vw;
+
+    }
+    .Navbar .top .right .mobile{
+        display: block;
+    }
+    .Navbar .top .right .ipad{
+        display: none;
+    }
+
+    .res-navbar .links .section .links-section{
+        font-size: 6vw;
+        gap: 4vw;
+    }
+    .res-navbar .links .search .btn{
+        font-size: 7vw;
+        padding: 3.4vw 2vw;
+    }
+}
